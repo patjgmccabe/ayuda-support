@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayuda Support — Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Ayuda&nbsp;<span>Support</span></a>
+
+      <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html"    data-i18n="navHome">Home</a></li>
+        <li><a href="services.html" data-i18n="navServices">Services</a></li>
+        <li><a href="opwdd.html"    data-i18n="navOPWDD">OPWDD Questions</a></li>
+        <li><a href="contact.html"  data-i18n="navContact">Contact Us</a></li>
+        <li><button class="lang-toggle" data-i18n="langBtn" onclick="toggleLanguage()">Español</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1 data-i18n="contactHeading">Contact Us</h1>
+    <p data-i18n="contactSubtitle">We would love to hear from you.</p>
+  </header>
+
+  <!-- Contact Form -->
+  <section>
+    <div class="container contact-wrapper">
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name" data-i18n="labelName">Full Name</label>
+          <input type="text" id="name" name="name" required data-i18n="placeName" placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+          <label for="email" data-i18n="labelEmail">Email</label>
+          <input type="email" id="email" name="email" required data-i18n="placeEmail" placeholder="you@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="message" data-i18n="labelMessage">Message</label>
+          <textarea id="message" name="message" required data-i18n="placeMessage" placeholder="How can we help you?"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" data-i18n="btnSend">Send Message</button>
+      </form>
+
+      <div class="form-success" data-i18n="formSuccess">Thank you! Your message has been received. We will get back to you soon.</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p data-i18n="footer">&copy; 2026 Ayuda Support. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

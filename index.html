@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayuda Support — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Ayuda&nbsp;<span>Support</span></a>
+
+      <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html"    data-i18n="navHome">Home</a></li>
+        <li><a href="services.html" data-i18n="navServices">Services</a></li>
+        <li><a href="opwdd.html"    data-i18n="navOPWDD">OPWDD Questions</a></li>
+        <li><a href="contact.html"  data-i18n="navContact">Contact Us</a></li>
+        <li><button class="lang-toggle" data-i18n="langBtn" onclick="toggleLanguage()">Español</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1 data-i18n="heroTitle">Welcome to Ayuda Support</h1>
+    <p data-i18n="heroSubtitle">Guiding individuals and families through OPWDD services with care, clarity, and compassion.</p>
+  </header>
+
+  <!-- Service Cards -->
+  <section>
+    <div class="container">
+      <div class="cards">
+
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-icon blue" aria-hidden="true">&#128101;</div>
+          <h3 data-i18n="cardTitle1">Support Broker Services</h3>
+          <p data-i18n="cardDesc1">Personalized guidance to help you navigate self-directed services and build a plan that works for you.</p>
+          <a href="services.html" class="btn btn-primary" data-i18n="cardBtn1">Learn More</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-icon green" aria-hidden="true">&#10067;</div>
+          <h3 data-i18n="cardTitle2">OPWDD Questions</h3>
+          <p data-i18n="cardDesc2">Find clear answers to the most common questions about OPWDD eligibility, services, and processes.</p>
+          <a href="opwdd.html" class="btn btn-accent" data-i18n="cardBtn2">View FAQs</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-icon orange" aria-hidden="true">&#9993;</div>
+          <h3 data-i18n="cardTitle3">Contact Us</h3>
+          <p data-i18n="cardDesc3">Have questions or need assistance? Reach out and we will be happy to help.</p>
+          <a href="contact.html" class="btn btn-primary" data-i18n="cardBtn3">Get in Touch</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p data-i18n="footer">&copy; 2026 Ayuda Support. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
