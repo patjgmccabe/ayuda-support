@@ -218,11 +218,8 @@ function initContactForm() {
       headers: { Accept: "application/json" }
     }).then(res => {
       if (res.ok) {
-        form.reset();
+        form.style.display = "none";
         document.querySelector(".form-success").classList.add("show");
-        setTimeout(() => {
-          document.querySelector(".form-success").classList.remove("show");
-        }, 5000);
       }
     });
   });

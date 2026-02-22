@@ -553,17 +553,25 @@ section {
 
 .form-success {
   display: none;
-  padding: 16px 24px;
+  padding: 48px 32px;
   background: #e6fffa;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius);
   color: var(--accent-dark);
   font-weight: 600;
+  font-size: 1.15rem;
   text-align: center;
-  margin-top: 16px;
+  line-height: 1.7;
+  box-shadow: var(--shadow);
 }
 
 .form-success.show {
   display: block;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ===== Footer ===== */
