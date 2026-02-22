@@ -203,18 +203,28 @@ function initMobileNav() {
   });
 }
 
-/* ===== Contact Form (frontend only) ===== */
+/* ===== Contact Form (Formspree) ===== */
 function initContactForm() {
   const form = document.getElementById("contactForm");
   if (!form) return;
 
   form.addEventListener("submit", e => {
     e.preventDefault();
-    form.reset();
-    document.querySelector(".form-success").classList.add("show");
-    setTimeout(() => {
-      document.querySelector(".form-success").classList.remove("show");
-    }, 5000);
+    const data = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" }
+    }).then(res => {
+      if (res.ok) {
+        form.reset();
+        document.querySelector(".form-success").classList.add("show");
+        setTimeout(() => {
+          document.querySelector(".form-success").classList.remove("show");
+        }, 5000);
+      }
+    });
   });
 }
 
