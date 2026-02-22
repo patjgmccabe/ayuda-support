@@ -305,6 +305,14 @@ section {
 }
 
 /* ===== Services Page ===== */
+.svc-section {
+  padding: 56px 0;
+}
+
+.svc-section-alt {
+  background: #f0f7ff;
+}
+
 .services-content {
   max-width: 780px;
   margin: 0 auto;
@@ -321,6 +329,87 @@ section {
   color: var(--text-light);
 }
 
+/* Intro grid: text + photo side by side */
+.svc-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 40px;
+  align-items: start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.svc-intro-text p {
+  margin-bottom: 18px;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.svc-photo-placeholder {
+  display: flex;
+  justify-content: center;
+}
+
+.svc-photo-box {
+  width: 260px;
+  height: 320px;
+  border-radius: var(--radius);
+  background: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  border: 2px dashed #cbd5e0;
+}
+
+/* Bilingual highlight box */
+.svc-bilingual-highlight {
+  background: var(--surface);
+  border-left: 4px solid var(--primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 20px 24px;
+  margin: 24px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.svc-bilingual-highlight p {
+  margin-bottom: 0;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* CTA section */
+.svc-cta-section {
+  background: linear-gradient(135deg, #ebf4ff 0%, #e6fffa 100%);
+}
+
+.svc-cta {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.svc-cta h2 {
+  font-size: 1.8rem;
+  color: var(--primary-dark);
+  margin-bottom: 16px;
+}
+
+.svc-cta p {
+  color: var(--text-light);
+  margin-bottom: 28px;
+  line-height: 1.8;
+}
+
+.btn-lg {
+  padding: 14px 36px;
+  font-size: 1.05rem;
+}
+
+/* Services list */
 .services-list {
   list-style: none;
   margin: 24px 0;
@@ -333,9 +422,10 @@ section {
   margin-bottom: 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   font-size: 1rem;
+  line-height: 1.7;
 }
 
 .services-list li::before {
@@ -350,6 +440,7 @@ section {
   color: var(--accent);
   font-weight: 700;
   flex-shrink: 0;
+  margin-top: 2px;
 }
 
 /* ===== FAQ / Accordion (OPWDD) ===== */
@@ -523,6 +614,24 @@ section {
     margin-top: 8px;
     width: 100%;
     text-align: center;
+  }
+
+  .svc-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .svc-photo-placeholder {
+    order: -1;
+  }
+
+  .svc-photo-box {
+    width: 200px;
+    height: 250px;
+  }
+
+  .svc-section {
+    padding: 40px 0;
   }
 
   .hero {
