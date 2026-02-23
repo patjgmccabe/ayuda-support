@@ -442,6 +442,18 @@ section {
   margin: 0 auto;
 }
 
+.faq-category {
+  font-size: 1.25rem;
+  color: var(--primary-dark);
+  margin: 36px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--primary);
+}
+
+.faq-category:first-child {
+  margin-top: 0;
+}
+
 .faq-item {
   background: var(--surface);
   border-radius: var(--radius-sm);
@@ -499,7 +511,7 @@ section {
 }
 
 .faq-item.open .faq-answer {
-  max-height: 600px;
+  max-height: 800px;
 }
 
 /* ===== Contact Form ===== */
